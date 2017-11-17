@@ -1,0 +1,35 @@
+[
+  {
+    "type": "ClozeCard",
+    "fullText": "I am majid",
+    "cloze": "majid",
+    "partialText": [
+      "I am ",
+      ""
+    ]
+  },
+  {
+    "type": "BasicCard",
+    "front": "who is majid?",
+    "back": "I am"
+  },
+  {
+    "type": "BasicCard",
+    "front": "What is great?",
+    "back": "This is"
+  },
+  {
+    "type": "ClozeCard",
+    "fullText": "This is great!",
+    "cloze": "This",
+    "partialText": [
+      "",
+      " is great!"
+    ]
+  },
+  {
+    "type": "BasicCard",
+    "front": "who am i?",
+    "back": "majid"
+  }
+]

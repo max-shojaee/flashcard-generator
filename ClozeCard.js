@@ -1,20 +1,31 @@
-
-// constructor should accept two arguments: `text` and `cloze`.
-
-// The constructed object should have a `cloze` property that contains _only_ the cloze-deleted portion of the text.
-
-// The constructed object should have a `partial` property that contains _only_ the partial text.
-
-// The constructed object should have a `fullText` property that contains _only_ the full text.
-
-// The constructor should throw or log an error when the cloze deletion does _not_ appear in the input text.
-
 // Constructor function for the 'Cloze Card'.
+// Constructor accepts two arguments: `text` and `cloze`.
+// The constructed object has a `cloze` property that contains the cloze-deleted portion.
+// The constructed object has a `partial` property that contains the partial text.
+// The constructed object should have a `fullText` property that contains the full text.
+// The constructor logs an error when the cloze deletion does not appear in the input text.
+
 
 function ClozeCard(text, cloze) {
-    this.text = text.split(cloze);
-    this.cloze = cloze;
 
+	if (this instanceof ClozeCard)
+	{
+		if (text.includes(cloze))
+		{
+			this.type = "ClozeCard";
+			this.fullText = text;
+			this.cloze = cloze;
+		    this.partialText = text.split(cloze);
+		}
+		else
+		{
+			throw("Error: The full text does not contain the cloze string.")
+		}
+	}
+	else
+	{
+		return new ClozeCard(text, cloze);
+	}
 };
 
 module.exports = ClozeCard;
