@@ -1,35 +1,25 @@
 [
   {
-    "type": "ClozeCard",
-    "fullText": "I am majid",
-    "cloze": "majid",
-    "partialText": [
-      "I am ",
-      ""
-    ]
-  },
-  {
     "type": "BasicCard",
-    "front": "who is majid?",
-    "back": "I am"
-  },
-  {
-    "type": "BasicCard",
-    "front": "What is great?",
-    "back": "This is"
+    "front": "Who was the first president of the United States?",
+    "back": "George Washington"
   },
   {
     "type": "ClozeCard",
-    "fullText": "This is great!",
-    "cloze": "This",
-    "partialText": [
-      "",
-      " is great!"
-    ]
+    "fullText": "Light bulb was invented by Thomas Edison",
+    "cloze": "Thomas Edison",
+    "partialText": "Light bulb was invented by ........"
   },
   {
-    "type": "BasicCard",
-    "front": "who am i?",
-    "back": "majid"
+    "type": "ClozeCard",
+    "fullText": "George Washington crossed the icy Delaware River in the Battle of Trenton",
+    "cloze": "Battle of Trenton",
+    "partialText": "George Washington crossed the icy Delaware River in the ........"
+  },
+  {
+    "type": "ClozeCard",
+    "fullText": "Telephone was invented by Alexander Graham Bell",
+    "cloze": "Telephone",
+    "partialText": "........ was invented by Alexander Graham Bell"
   }
 ]

@@ -15,11 +15,11 @@ function ClozeCard(text, cloze) {
 			this.type = "ClozeCard";
 			this.fullText = text;
 			this.cloze = cloze;
-		    this.partialText = text.split(cloze);
+			this.partialText = text.replace(cloze, "........");
 		}
 		else
 		{
-			throw("Error: The full text does not contain the cloze string.")
+			throw "Error: The full text does not contain the cloze string.";
 		}
 	}
 	else
